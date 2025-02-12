@@ -1,0 +1,63 @@
+/* Estilos personalizados */
+.footer {
+    background-color: #2E382E; /* Fondo verde oscuro */
+    color: white;
+    padding: 40px 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .footer h5 {
+    color: #50C9CE; /* Título en tono turquesa */
+    margin-bottom: 20px;
+  }
+  
+  .footer p {
+    color: white;
+    line-height: 1.6;
+  }
+  
+  .footer a {
+    color: #50C9CE; /* Enlaces en tono turquesa */
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .footer a:hover {
+    color: white; /* Cambio de color al pasar el mouse */
+    transform: scale(1.1); /* Aumento de tamaño al pasar el mouse */
+  }
+  
+  .social-icons a {
+    color: #50C9CE; /* Iconos sociales en tono turquesa */
+    font-size: 24px;
+    margin-right: 15px;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: white; /* Cambio de color al pasar el mouse */
+    transform: scale(1.3); /* Aumento de tamaño al pasar el mouse */
+  }
+  
+  .footer .list-unstyled li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-bottom {
+    background-color: #50C9CE; /* Fondo turquesa para la parte inferior */
+    padding: 15px 0;
+  }
+  
+  .footer-bottom p {
+    color: white;
+    font-size: 14px;
+  }
+  
+  @media (max-width: 768px) {
+    .footer .row {
+      text-align: center; /* Centrar texto en pantallas pequeñas */
+    }
+    .footer .col-md-4 {
+      margin-bottom: 20px; /* Espaciado entre secciones en pantallas pequeñas */
+    }
+  }
