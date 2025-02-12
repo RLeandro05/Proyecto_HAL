@@ -1,59 +1,66 @@
-# ProyectoHAL
+# Proyecto-HAL
+Proyecto destinado para mostrar datos estadísticos y hábitos acerca de la salud a nivel autonómico como proyecto del módulo DIW
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.7.
+### Aspectos a tener en cuenta de la página
+```
+Inicio
+  - Definición clave de "salud"
+  - ¿Qué características hacen a una persona saludable o no saludable?
+  - Quiz con puntuación (JS)
+```
+```
+Secciones:
+  - Quiz
+  - Gráficos estadísticos inventados a nivel Autonómico(C3JS)
+  - Hábitos saludables
+  - Hábitos insalubres
+  - Estilos de vida
+```
+```
+Quiz:
+  - Sencillo Quiz realizado con JS para mostrar una puntuación sobre lo saludables que eres y
+  consejos para reforzar los puntos fuertes y aconsejar en los puntos débiles
+```
+```
+Gráficos estadísticos:
+  - Gráfica implementada con C3JS para mostrar datos estadísticos
+  de Andalucía sobre los hábitos de salud
+```
+```
+Hábitos saludables:
+  - Información acerca de los principales hábitos que pueden convertir a
+  una persona en alguien mucho más saludable en el día a día
+```
+```
+Hábitos insalubres:
+  - Información acerca de los principales hábitos que pueden convertir a
+  una persona en alguien insalubre
+```
+```
+Estilos de vida:
+  - Información sobre los estilos de vida que se pueden llevar a cabo y
+  qué beneficios trae a la salud de la persona
 
-## Development server
-
-To start a local development server, run:
-
-```bash
-ng serve
+```
+### Otros enlaces
+```
+Sobre nosotros:
+  - Breve descripción y biografía de la empresa HAL sobre sus proyectos y forma de trabajar
+```
+```
+Contacto:
+  - Sencilla página con formulario para poder contactar con HAL
+```
+```
+FAQ (Preguntas Frecuentes):
+  - Página dedicada a mostrar las preguntas más comunes de los usuarios
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+### Pie de página y otros datos
 ```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
+Copyright
+Dirección
+Teléfono
+Correo
+Redes sociales
 ```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
