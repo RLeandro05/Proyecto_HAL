@@ -1,0 +1,79 @@
+/* Agregar transición para el borde, fondo, texto y escala en los párrafos */
+.custom-border-1, .custom-border-2 {
+    border: 2px solid #e9ecef; /* Borde inicial */
+    border-radius: 90% 10% 90% 10% / 20% 80% 20% 80%; /* Radio de bordes asimétricos */
+    background-color: #f8f9fa; /* Fondo inicial */
+    color: #212529; /* Color de texto inicial */
+    transition: 
+        border-color 0.3s ease, /* Transición suave para el color del borde */
+        background-color 0.3s ease, /* Transición suave para el color de fondo */
+        color 0.3s ease, /* Transición suave para el color del texto */
+        box-shadow 0.3s ease, /* Transición suave para la sombra */
+        transform 0.3s ease; /* Transición suave para el escalado */
+}
+
+/* Hover para los párrafos */
+.custom-border-1:hover, .custom-border-2:hover {
+    border-color: #007bff; /* Cambiar el borde a azul */
+    background-color: #e4f6ff; /* Fondo azul claro */
+    color: #004085; /* Texto más oscuro para contraste */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    transform: scale(1.03); /* Escalado ligero */
+}
+
+/* Mantener estilos generales */
+.image-container {
+    background-color: #f8f9fa;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+    border-radius: 90% 10% 90% 10% / 20% 80% 20% 80%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid #e9ecef;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 0;
+    box-shadow: none;
+    transition: transform 0.3s ease;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    border-radius: 0;
+    box-shadow: none;
+    transition: transform 0.3s ease;
+}
+
+p.custom-shadow:hover {
+    transform: scale(1.05);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+}
+
+.image-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+    border-color: #007bff;
+}
+
+.image-container img:hover {
+    transform: scale(1.1);
+}
+
+p a {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: underline;
+    background-color: transparent;
+    padding: 5px 10px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+p a:hover {
+    background-color: #007bff;
+    color: #ffffff;
+}
