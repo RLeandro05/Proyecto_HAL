@@ -9,18 +9,18 @@
 
 nav.fixed-top {
   border-bottom: #92c020 solid 1px;
-  background-color: #fff;
+  /*background-color: #fff;*/
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-  /*
+  
   background: hsla(77, 71%, 44%, 1);
 
-  background: linear-gradient(180deg, hsla(77, 71%, 44%, 1) 0%, hsla(164, 100%, 35%, 1) 100%);
-  
-  background: -moz-linear-gradient(180deg, hsla(77, 71%, 44%, 1) 0%, hsla(164, 100%, 35%, 1) 100%);
-  
-  background: -webkit-linear-gradient(180deg, hsla(77, 71%, 44%, 1) 0%, hsla(164, 100%, 35%, 1) 100%);
-  
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#92c020", endColorstr="#00b383", GradientType=1 );*/
+    background: linear-gradient(135deg, hsla(77, 71%, 44%, 1) 0%, hsla(164, 100%, 35%, 1) 100%);
+
+    background: -moz-linear-gradient(135deg, hsla(77, 71%, 44%, 1) 0%, hsla(164, 100%, 35%, 1) 100%);
+
+    background: -webkit-linear-gradient(135deg, hsla(77, 71%, 44%, 1) 0%, hsla(164, 100%, 35%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#92c020", endColorstr="#00b383", GradientType=1);
 
   /*background: hsla(77, 71%, 44%, 1);
 
@@ -35,7 +35,7 @@ nav.fixed-top {
 
 .navbar-brand {
   font-weight: 600;
-  color: #009970;
+  color: #ffffff;
   font-size: 24px;
   transition: 0.3s color;
 }
@@ -44,6 +44,7 @@ nav.fixed-top {
   color: #000;
 }
 
+/*
 .login-button {
   background-color: #009970;
   color: #fff;
@@ -57,11 +58,11 @@ nav.fixed-top {
 .login-button:hover {
   background-color: #00b383;
 }
+*/
 
 .navbar-toggler {
   border: none;
   font-size: 1.2rem;
-  
 }
 
 .navbar-toggler:focus,
@@ -71,34 +72,63 @@ nav.fixed-top {
 }
 
 .nav-link {
-  color: #666777;
+  color: #1a1a1a;
   font-weight: 500;
   position: relative;
 }
 
 .nav-link:hover,
 .nav-link.active {
-  color: #000;
-  
+  color: #f8f8f8;
+
 }
 
 /*@media (min-width: 991px) {*/
-  .nav-link:before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 0;
-    height: 2px;
-    background-color: #63a91f;
-    visibility: hidden;
-    transition: 0.3s ease-in-out;
+.nav-link:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: #1a512e;
+  visibility: hidden;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-link:hover::before,
+.nav-link.active::before {
+  width: 100%;
+  visibility: visible;
+}
+
+/*}*/
+@media (max-width: 991px) {
+  .offcanvas {
+    background: hsla(77, 71%, 44%, 1);
+
+    background: linear-gradient(135deg, hsla(77, 71%, 44%, 1) 0%, hsla(164, 100%, 35%, 1) 100%);
+
+    background: -moz-linear-gradient(135deg, hsla(77, 71%, 44%, 1) 0%, hsla(164, 100%, 35%, 1) 100%);
+
+    background: -webkit-linear-gradient(135deg, hsla(77, 71%, 44%, 1) 0%, hsla(164, 100%, 35%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#92c020", endColorstr="#00b383", GradientType=1);
   }
 
-  .nav-link:hover::before,
-  .nav-link.active::before {
-    width: 100%;
-    visibility: visible;
+  .nav-link {
+    color: #1a1a1a;
   }
-/*}*/
+
+  .nav-link:hover,
+  .nav-link.active {
+    color: #f8f8f8;
+    font-weight: 550;
+  }
+
+  .nav-link:before {
+    background-color: #1a512e;
+  }
+
+}
