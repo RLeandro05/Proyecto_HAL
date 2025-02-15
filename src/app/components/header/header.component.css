@@ -8,40 +8,21 @@
 }
 
 nav.fixed-top {
-  border-bottom: #92c020 solid 1px;
-  /*background-color: #fff;*/
+  border-bottom: #50cace59 solid 1px;
+  background-color: #2e382e;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
   
-  background: hsla(77, 71%, 44%, 1);
-
-    background: linear-gradient(135deg, hsla(77, 71%, 44%, 1) 0%, hsla(164, 100%, 35%, 1) 100%);
-
-    background: -moz-linear-gradient(135deg, hsla(77, 71%, 44%, 1) 0%, hsla(164, 100%, 35%, 1) 100%);
-
-    background: -webkit-linear-gradient(135deg, hsla(77, 71%, 44%, 1) 0%, hsla(164, 100%, 35%, 1) 100%);
-
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#92c020", endColorstr="#00b383", GradientType=1);
-
-  /*background: hsla(77, 71%, 44%, 1);
-
-  background: linear-gradient(135deg, hsla(77, 71%, 44%, 1) 0%, hsla(164, 100%, 35%, 1) 100%);
-  
-  background: -moz-linear-gradient(135deg, hsla(77, 71%, 44%, 1) 0%, hsla(164, 100%, 35%, 1) 100%);
-  
-  background: -webkit-linear-gradient(135deg, hsla(77, 71%, 44%, 1) 0%, hsla(164, 100%, 35%, 1) 100%);
-  
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#92c020", endColorstr="#00b383", GradientType=1 );*/
 }
 
 .navbar-brand {
   font-weight: 600;
-  color: #ffffff;
+  color: #50c9ce;
   font-size: 24px;
   transition: 0.3s color;
 }
 
 .navbar-brand:hover {
-  color: #000;
+  color: #fff;
 }
 
 /*
@@ -63,6 +44,7 @@ nav.fixed-top {
 .navbar-toggler {
   border: none;
   font-size: 1.2rem;
+  background-color: aliceblue;
 }
 
 .navbar-toggler:focus,
@@ -72,14 +54,14 @@ nav.fixed-top {
 }
 
 .nav-link {
-  color: #1a1a1a;
+  color: #f8f8f8;
   font-weight: 500;
   position: relative;
 }
 
 .nav-link:hover,
 .nav-link.active {
-  color: #f8f8f8;
+  color: #50c9ce;
 
 }
 
@@ -92,7 +74,7 @@ nav.fixed-top {
   transform: translateX(-50%);
   width: 0;
   height: 2px;
-  background-color: #1a512e;
+  background-color: #50c9ce;
   visibility: hidden;
   transition: 0.3s ease-in-out;
 }
@@ -106,29 +88,9 @@ nav.fixed-top {
 /*}*/
 @media (max-width: 991px) {
   .offcanvas {
-    background: hsla(77, 71%, 44%, 1);
-
-    background: linear-gradient(135deg, hsla(77, 71%, 44%, 1) 0%, hsla(164, 100%, 35%, 1) 100%);
-
-    background: -moz-linear-gradient(135deg, hsla(77, 71%, 44%, 1) 0%, hsla(164, 100%, 35%, 1) 100%);
-
-    background: -webkit-linear-gradient(135deg, hsla(77, 71%, 44%, 1) 0%, hsla(164, 100%, 35%, 1) 100%);
-
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#92c020", endColorstr="#00b383", GradientType=1);
+    background-color: #2e382e;
   }
-
-  .nav-link {
-    color: #1a1a1a;
+  .offcanvas-title {
+    color: #50c9ce;
   }
-
-  .nav-link:hover,
-  .nav-link.active {
-    color: #f8f8f8;
-    font-weight: 550;
-  }
-
-  .nav-link:before {
-    background-color: #1a512e;
-  }
-
 }
