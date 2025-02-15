@@ -1,0 +1,110 @@
+.quiz-container {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 30px auto;
+  }
+  
+  /* Título del quiz */
+  .quiz-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 123, 255, 0.2);
+  }
+  
+  /* Estilo para las preguntas */
+  .question {
+    margin-bottom: 20px;
+  }
+  
+  .question h4 {
+    font-size: 1.25rem;
+    color: #343a40;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  /* Estilos para las opciones de respuesta */
+  .option-btn {
+    display: block;
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 1rem;
+    text-align: left;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .option-btn:hover {
+    background-color: #f1f1f1;
+    transform: scale(1.05);
+  }
+  
+  .option-btn.selected {
+    background-color: #007bff;
+    color: #ffffff;
+    border: 1px solid #007bff;
+  }
+  
+  .option-btn.selected:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  /* Estilos para el botón de evaluación */
+  .submit {
+    text-align: center;
+    margin-top: 20px; /* Aseguramos que esté un poco separado de las preguntas */
+  }
+  
+  
+  
+  
+  
+  /* Estilos para mostrar el resultado */
+  .result {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .result h3 {
+    color: #007bff;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .result p {
+    font-size: 1.2rem;
+    color: #343a40;
+  }
+  
+  /* Responsividad */
+  @media (max-width: 768px) {
+    .quiz-container {
+      padding: 15px;
+    }
+  
+    .quiz-title {
+      font-size: 1.5rem;
+    }
+  
+    .option-btn {
+      font-size: 1rem;
+    }
+  
+    .submit-btn button {
+      font-size: 1rem;
+    }
+  }

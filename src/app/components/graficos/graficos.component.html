@@ -1,27 +1,73 @@
 <div class="container mt-5">
-    <h2 class="text-center mb-4">Gráficos Estadísticos</h2>
-  
-    <div class="row justify-content-center">
+  <h2 class="text-center mb-4">Gráficos Estadísticos</h2>
+  <p class="text-center">Análisis del consumo de macronutrientes en diferentes grupos de edad y su evolución en el tiempo.</p>
+
+  <div class="row justify-content-center">
       <!-- Gráfico de Barras -->
       <div class="col-12 col-md-6 mb-4">
-        <div class="card shadow">
-          <div class="card-body">
-            <h5 class="card-title text-center">Gráfico de Barras</h5>
-            <!-- Canvas para el gráfico de barras -->
-            <canvas id="barChart" width="400" height="200"></canvas>
+          <div class="card shadow">
+              <div class="card-body">
+                  <h5 class="card-title text-center">Consumo de Macronutrientes por Edad</h5>
+                  <p class="text-muted text-center">Distribución de hidratos de carbono, proteínas y grasas en diferentes rangos de edad.</p>
+                  <canvas id="barChart" width="400" height="200"></canvas>
+              </div>
           </div>
-        </div>
       </div>
-  
+
       <!-- Gráfico de Líneas -->
       <div class="col-12 col-md-6 mb-4">
-        <div class="card shadow">
-          <div class="card-body">
-            <h5 class="card-title text-center">Gráfico de Líneas</h5>
-            <!-- Canvas para el gráfico de líneas -->
-            <canvas id="lineChart" width="400" height="200"></canvas>
+          <div class="card shadow">
+              <div class="card-body">
+                  <h5 class="card-title text-center">Evolución del Consumo de Macronutrientes</h5>
+                  <p class="text-muted text-center">Cambios en el consumo de macronutrientes desde 2015 hasta 2025, con un incremento notable en azúcares.</p>
+                  <canvas id="lineChart" width="400" height="200"></canvas>
+              </div>
           </div>
-        </div>
       </div>
-    </div>
+
+      <!-- Gráfico de Pastel -->
+      <div class="col-12 col-md-6 mb-4">
+          <div class="card shadow">
+              <div class="card-body">
+                  <h5 class="card-title text-center">Distribución del Consumo en 2025</h5>
+                  <p class="text-muted text-center">Proporción de hidratos de carbono, proteínas, grasas y azúcares en el año 2025.</p>
+                  <canvas id="pieChart" width="400" height="200"></canvas>
+              </div>
+          </div>
+      </div>
+
+      <!-- Gráfico de Radar -->
+      <div class="col-12 col-md-6 mb-4">
+          <div class="card shadow">
+              <div class="card-body">
+                  <h5 class="card-title text-center">Comparación de Macronutrientes en 2025</h5>
+                  <p class="text-muted text-center">Visualización comparativa del consumo de macronutrientes en un gráfico de radar.</p>
+                  <canvas id="radarChart" width="400" height="200"></canvas>
+              </div>
+          </div>
+      </div>
   </div>
+</div>
+
+<div class="container mt-5">
+  <h2 class="text-center mb-4">Análisis del Estilo de Vida en Andalucía</h2>
+  <p class="text-center text-muted">
+    Este análisis revela tendencias clave en la alimentación de los andaluces, destacando cambios significativos en el consumo de macronutrientes a lo largo de los años y entre diferentes grupos de edad.
+  </p>
+
+  <div class="card shadow-lg p-4 mt-4">
+    <h4 class="text-center mb-3">Resumen e Interpretación de los Datos</h4>
+    <p class="text-justify">
+      El consumo de <strong>hidratos de carbono</strong> es mayor en adultos jóvenes (18-45 años), lo que puede estar relacionado con un estilo de vida más activo. Sin embargo, en los grupos de mayor edad, su consumo disminuye en favor de un mayor balance con proteínas y grasas.
+    </p>
+    <p class="text-justify">
+      A lo largo de los años, se observa un <span class="text-danger"><strong>incremento considerable en el consumo de azúcares</strong></span>, lo que sugiere una mayor preferencia por alimentos procesados y bebidas azucaradas. Esta tendencia podría estar contribuyendo a un aumento en problemas de salud como la obesidad y la diabetes.
+    </p>
+    <p class="text-justify">
+      La distribución de macronutrientes en 2025 muestra un <span class="text-warning"><strong>desequilibrio en la ingesta</strong></span>, con un alto porcentaje de hidratos de carbono y azúcares en comparación con las proteínas y grasas saludables. Este patrón refleja la necesidad de fomentar una alimentación más equilibrada.
+    </p>
+    <p class="text-justify">
+      En la comparativa global, la evolución de la alimentación en Andalucía indica una transición hacia dietas más calóricas y menos saludables, subrayando la importancia de promover <strong>hábitos nutricionales más saludables</strong> para prevenir enfermedades metabólicas.
+    </p>
+  </div>
+</div>

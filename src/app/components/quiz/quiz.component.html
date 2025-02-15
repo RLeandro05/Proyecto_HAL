@@ -1,0 +1,32 @@
+<div class="quiz-container">
+  <h2 class="quiz-title">Test de Hábitos Saludables</h2>
+  
+  <div *ngFor="let question of questions; let i = index" class="question">
+    <h4>{{ question.question }}</h4>
+
+    <div *ngFor="let option of question.options">
+      <button 
+        class="option-btn"
+        [class.selected]="question.selectedOption === option.score"
+        (click)="selectOption(i, option.score)">
+        {{ option.answer }}
+      </button>
+    </div>
+  </div>
+
+  <!-- Botón para ver el resultado después de responder todas las preguntas -->
+  <div *ngIf="!quizCompleted" class="submit-btn btn btn-danger">
+    <div class="submit">
+        <button 
+          class="btn btn-primary" 
+          [disabled]="!allQuestionsAnswered()" 
+          (click)="evaluateResult()">Evaluar Resultados</button>
+      </div>
+  </div>
+
+  <!-- Mostrar el resultado solo después de completar el quiz -->
+  <div *ngIf="quizCompleted" class="result">
+    <h3>Resultado:</h3>
+    <p>{{ result }}</p>
+  </div>
+</div>
