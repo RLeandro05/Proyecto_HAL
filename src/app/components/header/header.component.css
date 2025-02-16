@@ -54,13 +54,22 @@ nav.fixed-top {
 .navbar-toggler {
   border: none;
   font-size: 1.2rem;
-  background-color: aliceblue;
+  background-color: #f0f8ff71;
+  transition: 0.3s background-color;
+}
+
+.navbar-toggler:hover {
+  background-color: #f0f8ff;
 }
 
 .navbar-toggler:focus,
 .btn-close:focus {
   box-shadow: none;
   outline: none;
+}
+
+.btn-close {
+  filter: invert(100%);
 }
 
 .nav-link {
