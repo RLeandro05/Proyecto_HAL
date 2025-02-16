@@ -15,10 +15,10 @@ nav.fixed-top {
 }
 
 .navbar-brand {
-  position: absolute;
-  left: 15px; /* Ajusta según necesidad */
-  top: 50%;
-  transform: translateY(-50%);
+  position: relative;
+  left: 0;
+  top: auto;
+  transform: none;
   font-weight: 600;
   color: #50c9ce;
   font-size: 24px;
@@ -106,6 +106,7 @@ nav.fixed-top {
 }
 
 /*}*/
+
 @media (max-width: 1200px) {
   .offcanvas {
     background-color: #2e382e;
