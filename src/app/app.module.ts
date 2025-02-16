@@ -10,6 +10,7 @@ import { InformacionSaludComponent } from './components/informacion-salud/inform
 import { FooterComponent } from './components/footer/footer.component';
 import { GraficosComponent } from './components/graficos/graficos.component';
 import { QuizComponent } from './components/quiz/quiz.component';
+import { HabitosInsalubresComponent } from './components/habitos-insalubres/habitos-insalubres.component';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { QuizComponent } from './components/quiz/quiz.component';
     FooterComponent,
     GraficosComponent,
     QuizComponent,
+    HabitosInsalubresComponent,
     
   ],
   imports: [

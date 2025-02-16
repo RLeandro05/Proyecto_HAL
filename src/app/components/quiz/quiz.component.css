@@ -1,8 +1,6 @@
 .quiz-container {
     background-color: #4fc9ce;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
     max-width: 800px;
     margin: 30px auto;
   }
@@ -13,7 +11,14 @@
     font-size: 2rem;
     color: #343a40;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 123, 255, 0.2);
+    
+  }
+  .text-centerP{
+    text-align: center;
+    color:#389caa;
+    border: 2px solid #389caa; /* Se añade un borde al hacer hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombras más pronunciadas para resaltar */
+    border-radius: 10px;
   }
   
   /* Estilo para las preguntas */
@@ -45,6 +50,7 @@
   .option-btn:hover {
     background-color: #f1f1f1;
     transform: scale(1.05);
+    border: 1px solid #ffc507;
   }
   
   .option-btn.selected {

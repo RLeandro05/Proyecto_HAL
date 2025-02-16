@@ -59,6 +59,14 @@ p {
     color: #343a40;
 }
 
+.text-centerP{
+    text-align: center;
+    color:#389caa;
+    border: 2px solid #389caa; /* Se añade un borde al hacer hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombras más pronunciadas para resaltar */
+    border-radius: 10px;
+  }
+
 /* Gráficos de barras */
 .bar-chart {
     display: flex;
