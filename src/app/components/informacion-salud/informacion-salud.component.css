@@ -14,8 +14,8 @@
 
 /* Hover para los párrafos */
 .custom-border-1:hover, .custom-border-2:hover {
-    border-color: #007bff; /* Cambiar el borde a azul */
-    background-color: #e4f6ff; /* Fondo azul claro */
+    border-color: #50c9ce; /* Cambiar el borde a azul */
+    background-color: #cbf3f5; /* Fondo azul claro */
     color: #004085; /* Texto más oscuro para contraste */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombra suave */
     transform: scale(1.03); /* Escalado ligero */
@@ -56,7 +56,7 @@ p.custom-shadow:hover {
 .image-container:hover {
     transform: scale(1.05);
     box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
-    border-color: #007bff;
+    border-color: #50c9ce;
 }
 
 .image-container img:hover {
@@ -64,7 +64,7 @@ p.custom-shadow:hover {
 }
 
 p a {
-    color: #007bff;
+    color: #50c9ce;
     font-weight: bold;
     text-decoration: underline;
     background-color: transparent;
@@ -74,6 +74,6 @@ p a {
 }
 
 p a:hover {
-    background-color: #007bff;
-    color: #ffffff;
+    background-color: #50c9ce;
+    color: #f8f9fa;
 }

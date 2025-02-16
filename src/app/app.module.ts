@@ -11,6 +11,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { GraficosComponent } from './components/graficos/graficos.component';
 import { QuizComponent } from './components/quiz/quiz.component';
 import { HabitosInsalubresComponent } from './components/habitos-insalubres/habitos-insalubres.component';
+import { HabitosSaludablesComponent } from './components/habitos-saludables/habitos-saludables.component';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { HabitosInsalubresComponent } from './components/habitos-insalubres/habi
     GraficosComponent,
     QuizComponent,
     HabitosInsalubresComponent,
+    HabitosSaludablesComponent,
     
   ],
   imports: [
