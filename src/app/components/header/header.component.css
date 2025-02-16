@@ -15,14 +15,24 @@ nav.fixed-top {
 }
 
 .navbar-brand {
+  position: absolute;
+  left: 15px; /* Ajusta según necesidad */
+  top: 50%;
+  transform: translateY(-50%);
   font-weight: 600;
   color: #50c9ce;
   font-size: 24px;
   transition: 0.3s color;
 }
 
-.navbar-brand:hover {
-  color: #fff;
+.logo {
+  width: 100px; 
+  max-height: 50px;
+  transition: transform 1s;
+}
+
+.logo:hover {
+  transform: rotateY(360deg);
 }
 
 /*
@@ -87,7 +97,7 @@ nav.fixed-top {
 }
 
 /*}*/
-@media (max-width: 991px) {
+@media (max-width: 1200px) {
   .offcanvas {
     background-color: #2e382e;
   }
