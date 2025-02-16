@@ -64,7 +64,7 @@ p.custom-shadow:hover {
 }
 
 p a {
-    color: #007bff;
+    color: #50c9ce;
     font-weight: bold;
     text-decoration: underline;
     background-color: transparent;
@@ -74,6 +74,6 @@ p a {
 }
 
 p a:hover {
-    background-color: #007bff;
-    color: #ffffff;
+    background-color: #50c9ce;
+    color: #f8f9fa;
 }
