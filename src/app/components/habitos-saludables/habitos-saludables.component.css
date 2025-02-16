@@ -1,0 +1,166 @@
+/* Estilo base para los botones */
+.btn {
+    margin-top: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Transición suave */
+    background-color: #4caf50; /* Color verde para los botones */
+    color: white; /* Texto blanco para contraste */
+    border: none; /* Quitamos el borde para un diseño limpio */
+    padding: 10px 20px; /* Espaciado interior */
+    font-size: 1rem; /* Tamaño de fuente */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Eliminamos subrayado si es un enlace */
+}
+
+/* Hover para los botones */
+.btn:hover {
+    transform: translateY(-5px); /* Efecto de elevación */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra al pasar el mouse */
+    background-color: #45a049; /* Oscurecemos ligeramente el verde */
+}
+
+/* Estado activo para los botones */
+.btn:active {
+    transform: translateY(-5px); /* Mantenemos la elevación */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Reducimos la sombra */
+    background-color: #3e8e41; /* Oscurecemos aún más el verde */
+}
+
+/* Estilo para las tarjetas (.card) */
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    min-height: 350px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease; /* Agregamos transición para el borde */
+    border: 2px solid #389caa; /* Borde azul turquesa por defecto */
+    border-radius: 10px; /* Bordes redondeados */
+    background-color: #f8f9fa; /* Fondo claro */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+/* Hover para las tarjetas */
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+    border: 2px solid #4caf50; /* Cambiamos el borde a verde al pasar el mouse */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Resto del CSS original (sin cambios) */
+
+h2 {
+    margin-top: 100px;
+    color: #389caa;
+    border: 2px solid #389caa; /* Borde adicional para el título */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px 20px;
+}
+
+.card-img-top {
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #389caa;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #389caa;
+}
+
+/* Contenedor para centrar la imagen animada */
+.image-wrapper {
+    display: flex; /* Usamos flexbox */
+    justify-content: center; /* Centramos horizontalmente */
+    align-items: center; /* Centramos verticalmente */
+    margin-bottom: 30px; /* Espaciado inferior para separar del título */
+}
+
+/* Estilo para la imagen animada */
+.animated-image {
+    width: 100px; /* Tamaño de la imagen */
+    animation: slideIn 3s ease-out forwards; /* Aplicamos la animación */
+}
+
+/* Contenedor para centrar la imagen animada */
+.image-wrapper {
+    display: flex; /* Usamos flexbox */
+    justify-content: center; /* Centramos horizontalmente */
+    align-items: center; /* Centramos verticalmente */
+    margin-bottom: 30px; /* Espaciado inferior para separar del título */
+}
+
+/* Estilo para la imagen animada */
+.animated-image {
+    width: 100px; /* Tamaño de la imagen */
+    animation: slideIn 3s ease-out forwards; /* Aplicamos la animación */
+}
+
+/* Animación */
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100vw); /* Comienza fuera de la pantalla desde la izquierda */
+        opacity: 0;
+    }
+    50% {
+        transform: translateX(30%); /* Mueve la imagen hacia el centro */
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0%); /* Coloca la imagen en el centro */
+        opacity: 1;
+    }
+}
+
+/* Contenedor para centrar la imagen animada */
+.card-img-top-wrapper {
+    display: flex; /* Usamos flexbox */
+    justify-content: center; /* Centramos horizontalmente */
+    align-items: center; /* Centramos verticalmente */
+    margin-bottom: 30px; /* Espaciado inferior para separar del título */
+}
+
+.card-video-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    background-color: #f8f9fa;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #389caa; /* Borde azul turquesa por defecto */
+}
+
+.card-video-wrapper:hover {
+    border: 2px solid #4caf50; /* Cambiamos el borde a verde al pasar el mouse */
+}
+
+.animated-video {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #389caa; /* Borde azul turquesa por defecto */
+}
+
+.animated-video:hover {
+    border: 2px solid #4caf50; /* Cambiamos el borde a verde al pasar el mouse */
+}
