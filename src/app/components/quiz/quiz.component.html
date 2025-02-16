@@ -15,10 +15,10 @@
   </div>
 
   <!-- Botón para ver el resultado después de responder todas las preguntas -->
-  <div *ngIf="!quizCompleted" class="submit-btn btn btn-danger">
+  <div *ngIf="!quizCompleted" class="">
     <div class="submit">
         <button 
-          class="btn btn-primary" 
+          class="btn btn-warning" 
           [disabled]="!allQuestionsAnswered()" 
           (click)="evaluateResult()">Evaluar Resultados</button>
       </div>
@@ -28,5 +28,6 @@
   <div *ngIf="quizCompleted" class="result">
     <h3>Resultado:</h3>
     <p>{{ result }}</p>
+    <button class="btn btn-primary" (click)="resetQuiz()">Reiniciar Quiz</button>
   </div>
 </div>

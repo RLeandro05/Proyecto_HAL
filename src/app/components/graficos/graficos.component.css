@@ -18,7 +18,7 @@ body {
 
 /* Títulos */
 h2 {
-    color: #007bff;
+    color: #389caa;;
     font-weight: bold;
     text-shadow: 2px 2px 5px rgba(0, 123, 255, 0.2);
     animation: fadeInUp 1s ease-out;
@@ -41,7 +41,7 @@ p {
 .card:hover {
     transform: translateY(-10px) scale(1.05);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-    border: 2px solid #007bff; /* Borde azul al hacer hover */
+    border: 2px solid #389caa;; /* Borde azul al hacer hover */
 }
 
 /* Hacemos rebotar la animación al hacer hover en la tarjeta */
@@ -75,7 +75,7 @@ p {
 
 .bar {
     width: 15%;
-    background-color: #007bff;
+    background-color: #389caa;;
     margin: 0 5px;
     border-radius: 5px;
     transition: height 0.5s ease-in-out, background-color 0.3s ease-in-out;
