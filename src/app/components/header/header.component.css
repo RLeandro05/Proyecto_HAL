@@ -57,12 +57,13 @@ nav.fixed-top {
   color: #f8f8f8;
   font-weight: 500;
   position: relative;
+  transition: 0.3s color, 0.3s transform;
 }
 
 .nav-link:hover,
 .nav-link.active {
   color: #50c9ce;
-
+  transform: scale(1.07);
 }
 
 /*@media (min-width: 991px) {*/
