@@ -1,13 +1,13 @@
+<h2 class="container text-centerP mb-3 mt-3">¡¡Bienvenido a nuestro QUIZ!!</h2>
 <div class="quiz-container card shadow">
-  <h2 class="quiz-title">Test de Hábitos Saludables</h2>
   
+  <h2 class="quiz-title">Test de Hábitos Saludables</h2>
+
   <div *ngFor="let question of questions; let i = index" class="question">
     <h4>{{ question.question }}</h4>
 
     <div *ngFor="let option of question.options">
-      <button 
-        class="option-btn"
-        [class.selected]="question.selectedOption === option.score"
+      <button class="option-btn" [class.selected]="question.selectedOption === option.score"
         (click)="selectOption(i, option.score)">
         {{ option.answer }}
       </button>
@@ -17,11 +17,9 @@
   <!-- Botón para ver el resultado después de responder todas las preguntas -->
   <div *ngIf="!quizCompleted" class="">
     <div class="submit">
-        <button 
-          class="btn btn-warning" 
-          [disabled]="!allQuestionsAnswered()" 
-          (click)="evaluateResult()">Evaluar Resultados</button>
-      </div>
+      <button class="btn btn-warning" [disabled]="!allQuestionsAnswered()" (click)="evaluateResult()">Evaluar
+        Resultados</button>
+    </div>
   </div>
 
   <!-- Mostrar el resultado solo después de completar el quiz -->
