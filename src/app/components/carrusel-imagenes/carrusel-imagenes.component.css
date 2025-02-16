@@ -97,6 +97,12 @@
   font-weight: bold;
   opacity: 0;
   animation: animate 1s ease-in-out 1 forwards;
+  color: #2E382E;
+  text-shadow: 
+    -1px -1px 0 #50C9CE,  
+     1px -1px 0 #50C9CE,
+    -1px  1px 0 #50C9CE,
+     1px  1px 0 #50C9CE; /* Borde #50C9CE de 1px alrededor del texto */
 }
 
 .content .des {
@@ -104,6 +110,12 @@
   margin-bottom: 20px;
   opacity: 0;
   animation: animate 1s ease-in-out 0.3s 1 forwards;
+  color: #2E382E;
+  text-shadow: 
+    -1px -1px 0 #50C9CE,  
+     1px -1px 0 #50C9CE,
+    -1px  1px 0 #50C9CE,
+     1px  1px 0 #50C9CE; /* Borde #50C9CE de 1px alrededor del texto */
 }
 
 .content button {
