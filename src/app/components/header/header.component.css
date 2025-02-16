@@ -85,7 +85,7 @@ nav.fixed-top {
   transform: scale(1.07);
 }
 
-/*@media (min-width: 991px) {*/
+@media (min-width: 1400px) {
 .nav-link:before {
   content: "";
   position: absolute;
@@ -105,9 +105,9 @@ nav.fixed-top {
   visibility: visible;
 }
 
-/*}*/
+}
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   .offcanvas {
     background-color: #2e382e;
   }
