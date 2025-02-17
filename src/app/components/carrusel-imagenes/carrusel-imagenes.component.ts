@@ -29,7 +29,7 @@ export class CarruselImagenesComponent {
   }
 
   startAutoSlide() {
-    setInterval(() => this.nextSlide(), 3000);
+    setInterval(() => this.nextSlide(), 6800);
   }
   
 }
