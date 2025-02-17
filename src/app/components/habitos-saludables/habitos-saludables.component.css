@@ -33,7 +33,6 @@
     height: 100%;
     min-height: 350px;
     transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease; /* Agregamos transición para el borde */
-    border: 2px solid #389caa; /* Borde azul turquesa por defecto */
     border-radius: 10px; /* Bordes redondeados */
     background-color: #f8f9fa; /* Fondo claro */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra ligera */
@@ -51,6 +50,7 @@
 h2 {
     margin-top: 100px;
     color: #389caa;
+    font-weight: bold;
     border: 2px solid #389caa; /* Borde adicional para el título */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
@@ -134,6 +134,12 @@ h2 {
     margin-bottom: 30px; /* Espaciado inferior para separar del título */
 }
 
+.card.T:hover {
+    transform: translateY(-10px) scale(1.05);
+    border: 2px solid #389caa;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
 .card-video-wrapper {
     position: relative;
     overflow: hidden;
@@ -146,10 +152,6 @@ h2 {
     padding: 10px;
     margin-bottom: 20px;
     border: 2px solid #389caa; /* Borde azul turquesa por defecto */
-}
-
-.card-video-wrapper:hover {
-    border: 2px solid #4caf50; /* Cambiamos el borde a verde al pasar el mouse */
 }
 
 .animated-video {
