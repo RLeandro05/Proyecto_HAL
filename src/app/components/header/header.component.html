@@ -1,38 +1,42 @@
-<nav class="navbar navbar-expand-xl fixed-top py-3">
+<nav class="navbar navbar-expand-xxl fixed-top py-3">
   <div class="container-fluid">
-    <a class="navbar-brand me-auto" href="#"><img class="logo" src="images/logo-hal.png" alt="Logo"></a>
+    <a class="navbar-brand me-auto" href="/"><img class="logo" src="images/logo-hal.png" alt="Logo"></a>
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
       <div class="offcanvas-header">
         <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-          Logo
+          <img class="logo" src="images/logo-hal.png" alt="Logo">
         </h5>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body">
         <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
           <li class="nav-item">
-            <a class="nav-link mx-lg-2 active" aria-current="page" href="#">Inicio</a>
+            <a class="nav-link mx-lg-2" aria-current="page" href="/" [class.active]="esRutaActiva('/')">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-lg-2" href="http://localhost:4200/graficos">Gráficos estadísticos</a>
+            <a class="nav-link mx-lg-2" href="/graficos" [class.active]="esRutaActiva('/graficos')">Gráficos estadísticos</a>
           </li>
           <li class="nav-item">
+<<<<<<< HEAD
             <a class="nav-link mx-lg-2" href="http://localhost:4200/hSaludables">Hábitos saludables</a>
+=======
+            <a class="nav-link mx-lg-2" href="#" [class.active]="esRutaActiva('/prueba')">Hábitos saludables</a>
+>>>>>>> develop
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-lg-2" href="http://localhost:4200/hInsalubres">Hábitos insalubres</a>
+            <a class="nav-link mx-lg-2" href="/hInsalubres" [class.active]="esRutaActiva('/hInsalubres')">Hábitos insalubres</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-lg-2" href="#">Estilos de vida</a>
+            <a class="nav-link mx-lg-2" href="#" [class.active]="esRutaActiva('/prueba')">Estilos de vida</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-lg-2" href="http://localhost:4200/quiz">Quiz</a>
+            <a class="nav-link mx-lg-2" href="/quiz" [class.active]="esRutaActiva('/quiz')">Quiz</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-lg-2" href="#">Contacto</a>
+            <a class="nav-link mx-lg-2" href="#" [class.active]="esRutaActiva('/prueba')">Contacto</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-lg-2" href="#">Sobre Nosotros</a>
+            <a class="nav-link mx-lg-2" href="#" [class.active]="esRutaActiva('/prueba')">Sobre Nosotros</a>
           </li>
         </ul>
       </div>

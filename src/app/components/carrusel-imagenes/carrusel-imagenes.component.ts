@@ -8,6 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CarruselImagenesComponent {
 
+  constructor() {
+    this.startAutoSlide();
+  }
+
   nextSlide() {
     const items = document.querySelectorAll('.item');
     const slideContainer = document.querySelector('.slide');
@@ -24,5 +28,10 @@ export class CarruselImagenesComponent {
     }
   }
 
-
+  startAutoSlide() {
+    setInterval(() => this.nextSlide(), 6800);
+  }
+  
 }
+// Inicializa el carrusel
+const carousel = new CarruselImagenesComponent();
