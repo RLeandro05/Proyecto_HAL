@@ -5,12 +5,14 @@ import { HomeComponent } from './components/home/home.component';
 import { GraficosComponent } from './components/graficos/graficos.component';
 import { QuizComponent } from './components/quiz/quiz.component';
 import { HabitosInsalubresComponent } from './components/habitos-insalubres/habitos-insalubres.component';
+import { HabitosSaludablesComponent } from './components/habitos-saludables/habitos-saludables.component';
 
 const routes: Routes = [
   {path:"",component: HomeComponent},
   {path:"graficos",component: GraficosComponent},
   {path:"quiz",component: QuizComponent},
   {path:"hInsalubres",component: HabitosInsalubresComponent},
+  {path: "hSaludables", component: HabitosSaludablesComponent}
 
 ];
 
