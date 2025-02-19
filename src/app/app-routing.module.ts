@@ -13,6 +13,7 @@ const routes: Routes = [
   {path:"quiz",component: QuizComponent},
   {path:"hInsalubres",component: HabitosInsalubresComponent},
   {path:"estilosVida",component: EstilosVidaComponent},
+  
 
 ];
 
