@@ -26,6 +26,7 @@
   <div *ngIf="quizCompleted" class="result">
     <h3>Resultado:</h3>
     <p>{{ result }}</p>
-    <button class="btn btn-primary" (click)="resetQuiz()">Reiniciar Quiz</button>
+    <button class="btn btn-primary" (click)="resetQuiz()">Reiniciar Quiz</button> <br><br>
+    <button class="btn btn-success" [routerLink]="(['/hSaludables'])">Descubre Hábitos Saludables</button>
   </div>
 </div>
