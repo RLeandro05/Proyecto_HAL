@@ -13,8 +13,21 @@ h2 {
   justify-content: space-between;
   height: 100%;
   min-height: 350px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+  animation: smoothAnimation 6s infinite;
 }
+
+@keyframes smoothAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 
 .card-body {
   flex-grow: 1;
@@ -22,8 +35,9 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  padding: 15px 20px;
+  text-align: justify;
+  padding: 15px 20%;
+  position: relative;
 }
 
 .card-img-top {
@@ -34,12 +48,12 @@ h2 {
 .card-title {
   font-size: 1.25rem;
   font-weight: bold;
-  color: #389caa;
+  color: #009970;
 }
 
 .card-text {
   font-size: 1rem;
-  color: #389caa;
+  color: #009970;
 }
 
 .btn {
@@ -57,39 +71,47 @@ h2 {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.card:hover {
-  transform: translateY(-10px) scale(1.05);
-  border: 2px solid #f20604;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.card.T:hover {
-  transform: translateY(-10px) scale(1.05);
-  border: 2px solid #389caa;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
 /* Estilo para la imagen animada */
 .animated-image {
-  width: 100px; /* Tamaño de la imagen */
-  animation: slideIn 3s ease-out forwards; /* Aplicamos la animación */
+  width: 200px;
+  animation: slideIn 3s ease-out forwards, pulse 1.5s infinite ease-in-out 3s;
 }
 
-/* Animación */
+/* Animación de entrada */
 @keyframes slideIn {
   0% {
-      transform: translateX(-100vw); /* Comienza fuera de la pantalla desde la izquierda */
-      opacity: 0;
+    transform: translateX(-100vw) rotate(0deg);
+    opacity: 0;
   }
-  50% {
-      transform: translateX(30%); /* Mueve la imagen hacia el centro */
-      opacity: 1;
+  30% {
+    transform: translateX(30%) rotate(360deg);
+    opacity: 1;
+  }
+  60% {
+    transform: translateX(15%) scale(1.5);
+  }
+  80% {
+    transform: translateX(5%) scale(1);
   }
   100% {
-      transform: translateX(0%); /* Coloca la imagen en el centro */
-      opacity: 1;
+    transform: translateX(0%) rotateY(360deg);
+    opacity: 1;
   }
 }
+
+/* Animación de palpitación infinita */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 
 /* Contenedor para centrar la imagen animada */
 .card-img-top-wrapper {
@@ -132,4 +154,8 @@ h2 {
 
 .animated-video:hover {
   border: 2px solid #f20604; /* Cambiamos el borde a verde al pasar el mouse */
+}
+
+.about {
+  margin-bottom: 30px;
 }

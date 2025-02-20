@@ -12,7 +12,12 @@ import { GraficosComponent } from './components/graficos/graficos.component';
 import { QuizComponent } from './components/quiz/quiz.component';
 import { HabitosInsalubresComponent } from './components/habitos-insalubres/habitos-insalubres.component';
 import { HabitosSaludablesComponent } from './components/habitos-saludables/habitos-saludables.component';
+<<<<<<< HEAD
 import { ContactComponent } from './components/contact/contact.component';
+=======
+import { EstilosVidaComponent } from './components/estilos-vida/estilos-vida.component';
+import { AboutComponent } from './components/about/about.component';
+>>>>>>> f405cb605cebaa5c27c986002cd7d29da2811ba8
 
 
 @NgModule({
@@ -28,7 +33,12 @@ import { ContactComponent } from './components/contact/contact.component';
     QuizComponent,
     HabitosInsalubresComponent,
     HabitosSaludablesComponent,
+<<<<<<< HEAD
     ContactComponent,
+=======
+    EstilosVidaComponent,
+    AboutComponent,
+>>>>>>> f405cb605cebaa5c27c986002cd7d29da2811ba8
     
   ],
   imports: [
