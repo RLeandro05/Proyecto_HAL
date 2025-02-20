@@ -15,8 +15,6 @@ const routes: Routes = [
   {path:"quiz",component: QuizComponent},
   {path:"hInsalubres",component: HabitosInsalubresComponent},
   {path:"estilosVida",component: EstilosVidaComponent},
-  
-  {path: "hSaludables", component: HabitosSaludablesComponent}
   {path: "hSaludables", component: HabitosSaludablesComponent},
   {path: "sobreNosotros", component: AboutComponent}
 
