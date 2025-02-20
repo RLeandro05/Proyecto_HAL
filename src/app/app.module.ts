@@ -13,6 +13,7 @@ import { QuizComponent } from './components/quiz/quiz.component';
 import { HabitosInsalubresComponent } from './components/habitos-insalubres/habitos-insalubres.component';
 import { HabitosSaludablesComponent } from './components/habitos-saludables/habitos-saludables.component';
 import { EstilosVidaComponent } from './components/estilos-vida/estilos-vida.component';
+import { AboutComponent } from './components/about/about.component';
 
 
 @NgModule({
@@ -29,6 +30,7 @@ import { EstilosVidaComponent } from './components/estilos-vida/estilos-vida.com
     HabitosInsalubresComponent,
     HabitosSaludablesComponent,
     EstilosVidaComponent,
+    AboutComponent,
     
   ],
   imports: [

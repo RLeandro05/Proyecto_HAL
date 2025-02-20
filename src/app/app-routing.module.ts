@@ -7,6 +7,7 @@ import { QuizComponent } from './components/quiz/quiz.component';
 import { HabitosInsalubresComponent } from './components/habitos-insalubres/habitos-insalubres.component';
 import { EstilosVidaComponent } from './components/estilos-vida/estilos-vida.component';
 import { HabitosSaludablesComponent } from './components/habitos-saludables/habitos-saludables.component';
+import { AboutComponent } from './components/about/about.component';
 
 const routes: Routes = [
   {path:"",component: HomeComponent},
@@ -16,6 +17,8 @@ const routes: Routes = [
   {path:"estilosVida",component: EstilosVidaComponent},
   
   {path: "hSaludables", component: HabitosSaludablesComponent}
+  {path: "hSaludables", component: HabitosSaludablesComponent},
+  {path: "sobreNosotros", component: AboutComponent}
 
 ];
 
