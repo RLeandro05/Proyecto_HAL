@@ -1,0 +1,151 @@
+
+  /* Estilo base para el formulario */
+  .custom-form {
+    border: 2px solid #0d6efd; /* Color inicial del borde (azul de Bootstrap) */
+    border-radius: 10px;
+    padding: 20px;
+    transition: border-color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Efecto de luces parpadeantes al pasar el cursor */
+  .custom-form:hover {
+    border-color: transparent; /* Quitamos el borde azul */
+  }
+
+  .custom-form:hover::before {
+    content: '';
+    position: absolute;
+    top : 80%;
+    border-top-left-radius: 80%;
+    border-top-right-radius: 80%;
+    border-bottom-right-radius: 80%;
+    border-bottom-left-radius: 80%;
+    left: -60%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, #50C9CE, #2E382E, #50C9CE, #2E382E, #50C9CE, #2E382E, #50C9CE, #2E382E);
+    animation: animate 5s linear infinite;
+    z-index: -1;
+    opacity: 0.8;
+  }
+
+  @keyframes animate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+
+  /*  ------------------------------------  */
+
+  /* Estilo para las redes sociales */
+  .redesSociales a {
+    color: #0d6efd;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .redesSociales a:hover {
+    color: #ff5722; /* Cambio de color al pasar el cursor */
+    text-decoration: underline;
+  }
+
+  /* Estilo para el correo de contacto */
+  .correoContacto h4, .correoContacto h5 {
+    color: #333;
+  }
+
+  .correoContacto p {
+    color: #0d6efd;
+    font-weight: bold;
+  }
+
+  /* ------------------------------------------ */
+
+  /* Contenedor de las frutas */
+
+
+/* Clase base para todas las frutas */
+.fruit {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  animation: fall 5s linear infinite; /* Animación de caída */
+  background-size: cover; /* Asegura que la imagen cubra el contenedor */
+  background-position: center; /* Centra la imagen dentro del contenedor */
+}
+
+/* Estilos específicos para cada tipo de fruta */
+.apple {
+  background-image: url('/images/manzana.png'); /* Ruta de la imagen de la manzana */
+  top: -60px; /* Posición inicial fuera de la pantalla */
+  left: 50px; /* Posición horizontal */
+}
+
+.banana {
+  background-image: url('/images/platano.png'); /* Ruta de la imagen de la banana */
+  top: -60px;
+  left: 150px;
+}
+
+.orange {
+  background-image: url('/images/naranja.png'); /* Ruta de la imagen del naranja */
+  top: -60px;
+  left: 250px;
+}
+
+/* Animación de caída */
+@keyframes fall {
+  from {
+      transform: translateY(-100vh); /* Comienza fuera de la pantalla */
+  }
+  to {
+      transform: translateY(100vh); /* Termina fuera de la pantalla */
+  }
+}
+
+/* Posicionamiento aleatorio para las frutas */
+.fruit:nth-child(1) {
+  left: 10%; /* Posición horizontal */
+  animation-delay: 0s; /* Retraso de inicio */
+  animation-duration: 4s; /* Duración de la animación */
+}
+
+.fruit:nth-child(2) {
+  left: 30%;
+  animation-delay: 1s;
+  animation-duration: 5s;
+}
+
+.fruit:nth-child(3) {
+  left: 50%;
+  animation-delay: 2s;
+  animation-duration: 6s;
+}
+
+.fruit:nth-child(4) {
+  left: 70%;
+  animation-delay: 3s;
+  animation-duration: 4s;
+}
+
+.fruit:nth-child(5) {
+  left: 90%;
+  animation-delay: 0s;
+  animation-duration: 5s;
+}
+
+.fruit:nth-child(6) {
+  left: 20%;
+  animation-delay: 2s;
+  animation-duration: 6s;
+}
+
+
+
+
