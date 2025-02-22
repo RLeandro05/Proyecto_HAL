@@ -1,186 +1,194 @@
 /* image-slider.component.css */
 
+/* Estilo base para cada elemento del slider */
 .item {
-  width: 200px;
-  height: 300px;
-  position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
-  border-radius: 20px;
-  box-shadow: 0 30px 50px #505050;
-  background-position: center;
-  background-size: cover;
-  display: inline-block;
-  transition: 0.5s;
+  width: 200px; /* Ancho del elemento */
+  height: 300px; /* Alto del elemento */
+  position: absolute; /* Posicionamiento absoluto para posicionar los elementos dentro del contenedor */
+  top: 50%; /* Centra verticalmente el elemento */
+  transform: translate(0, -50%); /* Ajusta la posición exactamente al centro vertical */
+  border-radius: 20px; /* Bordes redondeados */
+  box-shadow: 0 30px 50px #505050; /* Sombra para dar profundidad */
+  background-position: center; /* Centra la imagen de fondo */
+  background-size: cover; /* Escala la imagen para cubrir completamente el elemento */
+  display: inline-block; /* Permite que los elementos se coloquen en línea */
+  transition: 0.5s; /* Transición suave para animaciones */
 }
 
-.container .slide{
-  position: relative; /* Importante para que los elementos absolutos se posicionen dentro de él */
-  height: 500px; /* Ajusta según sea necesario */
+/* Estilo para el contenedor del slide */
+.container .slide {
+  position: relative; /* Importante para que los elementos absolutos se posicionen correctamente dentro de este contenedor */
+  height: 500px; /* Altura del contenedor */
 }
 
-/*Posicionamiento de los botones*/
+/* Estilo para el contenedor principal */
 .container {
-  position: relative;
-  height: 500px; /* Ajusta según sea necesario */
+  position: relative; /* Establece un contexto de posicionamiento relativo */
+  height: 500px; /* Altura del contenedor */
 }
 
-
-
-/* Fondo específico para cada país */
+/* Fondo específico para cada categoría (usando imágenes de fondo) */
 .escalada {
-  background-image: url(/images/imagen1.jpg);
+  background-image: url(/images/imagen1.jpg); 
 }
 .bici {
-  background-image: url(/images/imagen2.jpg);
+  background-image: url(/images/imagen2.jpg); 
 }
 .buceo {
-  background-image: url(/images/imagen3.jpg);
+  background-image: url(/images/imagen3.jpg); 
 }
 .correr {
-  background-image: url(/images/imagen4.jpg);
+  background-image: url(/images/imagen4.jpg); 
 }
 .crossfit {
-  background-image: url(/images/imagen5.jpg);
+  background-image: url(/images/imagen5.jpg); 
 }
 .ninoescalada {
-  background-image: url(/images/imagen6.jpg);
+  background-image: url(/images/imagen6.jpg); 
 }
 
-/* Estilos restantes del slider */
+/* Estilos para posicionar los elementos dentro del slider */
 .slide .item:nth-child(1),
 .slide .item:nth-child(2) {
-  top: 0;
-  left: 0;
-  transform: translate(0, 0);
-  border-radius: 0;
-  width: 100%;
-  height: 100%;
+  top: 0; /* Posiciona los primeros dos elementos en la parte superior */
+  left: 0; /* Los alinea al inicio horizontal */
+  transform: translate(0, 0); /* Elimina cualquier traslación previa */
+  border-radius: 0; /* Quita los bordes redondeados */
+  width: 100%; /* Toma todo el ancho del contenedor */
+  height: 100%; /* Toma toda la altura del contenedor */
 }
 
 .slide .item:nth-child(3) {
-  left: 50%;
+  left: 50%; /* Posiciona el tercer elemento a la mitad del contenedor */
 }
 
 .slide .item:nth-child(4) {
-  left: calc(50% + 220px);
+  left: calc(50% + 220px); /* Posiciona el cuarto elemento después del tercero */
 }
 
 .slide .item:nth-child(5) {
-  left: calc(50% + 440px);
+  left: calc(50% + 440px); /* Posiciona el quinto elemento después del cuarto */
 }
 
 .slide .item:nth-child(n + 6) {
-  left: calc(50% + 660px);
-  opacity: 0;
+  left: calc(50% + 660px); /* Oculta los elementos adicionales fuera de la vista */
+  opacity: 0; /* Hace que los elementos adicionales sean invisibles */
 }
 
+/* Estilo para el contenido dentro de cada elemento del slider */
 .item .content {
-  position: relative;
-  top: 50%;
-  left: 100px;
-  width: 300px;
-  text-align: left;
-  color: #eee;
-  transform: translate(0, -50%);
-  font-family: system-ui;
-  display: none;
+  position: relative; /* Establece un contexto de posicionamiento relativo */
+  top: 50%; /* Centra verticalmente el contenido */
+  left: 100px; /* Desplaza el contenido hacia la derecha */
+  width: 300px; /* Ancho del contenido */
+  text-align: left; /* Alinea el texto a la izquierda */
+  color: #eee; /* Color del texto */
+  transform: translate(0, -50%); /* Ajusta la posición vertical exactamente al centro */
+  font-family: system-ui; /* Fuente del sistema */
+  display: none; /* Oculta el contenido por defecto */
 }
 
+/* Muestra el contenido solo en el segundo elemento */
 .slide .item:nth-child(2) .content {
-  display: block;
+  display: block; /* Muestra el contenido */
 }
 
+/* Estilo para el nombre dentro del contenido */
 .content .name {
-  font-size: 40px;
-  text-transform: uppercase;
-  font-weight: bold;
-  opacity: 0;
-  animation: animate 1s ease-in-out 1 forwards;
-  color: white;
-  
+  font-size: 40px; /* Tamaño del texto */
+  text-transform: uppercase; /* Convierte el texto a mayúsculas */
+  font-weight: bold; /* Negrita */
+  opacity: 0; /* Inicia con opacidad cero */
+  animation: animate 1s ease-in-out 1 forwards; /* Aplica una animación de desvanecimiento */
+  color: white; /* Color del texto */
 }
 
+/* Estilo para la descripción dentro del contenido */
 .content .des {
-  margin-top: 10px;
-  margin-bottom: 20px;
-  opacity: 0;
-  animation: animate 1s ease-in-out 0.3s 1 forwards;
-  color: white;
-  font-weight: bold;
-  
+  margin-top: 10px; /* Espaciado superior */
+  margin-bottom: 20px; /* Espaciado inferior */
+  opacity: 0; /* Inicia con opacidad cero */
+  animation: animate 1s ease-in-out 0.3s 1 forwards; /* Aplica una animación de desvanecimiento con retraso */
+  color: white; /* Color del texto */
+  font-weight: bold; /* Negrita */
 }
 
+/* Estilo común para el nombre y la descripción */
 .content .name,
 .content .des {
-  position: relative;
-  display: inline-block;
-  padding: 10px; /* Ajusta el padding según sea necesario */
-  background-color: rgba(46, 56, 46, 0.5); /* Fondo blanco semitransparente */
+  position: relative; /* Establece un contexto de posicionamiento relativo */
+  display: inline-block; /* Permite que los elementos se coloquen en línea */
+  padding: 10px; /* Espaciado interno */
+  background-color: rgba(46, 56, 46, 0.5); /* Fondo semitransparente */
   border-radius: 5px; /* Bordes redondeados */
-  
 }
 
+/* Estilo para el botón dentro del contenido */
 .content button {
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  opacity: 0;
-  animation: animate 1s ease-in-out 0.6s 1 forwards;
+  padding: 10px 20px; /* Espaciado interno */
+  border: none; /* Sin borde */
+  cursor: pointer; /* Cursor de puntero */
+  opacity: 0; /* Inicia con opacidad cero */
+  animation: animate 1s ease-in-out 0.6s 1 forwards; /* Aplica una animación de desvanecimiento con retraso */
 }
 
+/* Definición de la animación para mostrar elementos gradualmente */
 @keyframes animate {
   from {
-      opacity: 0;
-      transform: translate(0, 100px);
-      filter: blur(33px);
+    opacity: 0; /* Opacidad inicial */
+    transform: translate(0, 100px); /* Comienza desde abajo */
+    filter: blur(33px); /* Aplica un efecto de desenfoque */
   }
   to {
-      opacity: 1;
-      transform: translate(0);
-      filter: blur(0);
+    opacity: 1; /* Opacidad final */
+    transform: translate(0); /* Regresa a la posición original */
+    filter: blur(0); /* Quita el desenfoque */
   }
 }
 
-.btn{
-  background-color: #2E382E;
-  color: #ffffff;
-}
-.btn:hover{
-  background-color: #50C9CE;
-  color: #ffffff;
-  transition: 0.4s;
-  scale: calc(1.2);
+/* Estilo para los botones principales */
+.btn {
+  background-color: #2E382E; /* Color de fondo */
+  color: #ffffff; /* Color del texto */
 }
 
+/* Cambio de estilo al pasar el mouse sobre el botón */
+.btn:hover {
+  background-color: #50C9CE; /* Cambia el color de fondo */
+  color: #ffffff; /* Mantén el color del texto */
+  transition: 0.4s; /* Transición suave */
+  scale: calc(1.2); /* Aumenta ligeramente el tamaño */
+}
+
+/* Estilo para los botones de navegación */
 .button {
-  width: 100%;
-  text-align: center;
-  position: absolute;
-  top: 90%; /* Ajusta este valor para moverlo hacia arriba o abajo */
-  left: 50%; /* Ajusta este valor para moverlo hacia la izquierda o derecha */
-  transform: translate(-50%, -50%);
-  display: flex;
-  justify-content: space-between;
-  padding: 0 10px;
+  width: 100%; /* Toma todo el ancho del contenedor */
+  text-align: center; /* Centra el texto */
+  position: absolute; /* Posicionamiento absoluto */
+  top: 90%; /* Posición vertical */
+  left: 50%; /* Posición horizontal */
+  transform: translate(-50%, -50%); /* Centra perfectamente */
+  display: flex; /* Diseño flexible */
+  justify-content: space-between; /* Espacio entre los botones */
+  padding: 0 10px; /* Espaciado interior */
 }
 
+/* Estilo individual para cada botón de navegación */
 .button button {
-  width: 50px; /* Ajusta el ancho del botón */
-  height: 40px; /* Ajusta la altura del botón */
-  border-radius: 8px;
-  border: none;
-  cursor: pointer;
-  margin: 0 10px; /* Ajusta el margen entre los botones */
-  border: 1px solid #000;
-  transition: 0.3s;
-  background-color: #2E382E;
-  color: white;
+  width: 50px; /* Ancho del botón */
+  height: 40px; /* Alto del botón */
+  border-radius: 8px; /* Bordes redondeados */
+  border: none; /* Sin borde */
+  cursor: pointer; /* Cursor de puntero */
+  margin: 0 10px; /* Espaciado entre botones */
+  border: 1px solid #000; /* Borde negro */
+  transition: 0.3s; /* Transición suave */
+  background-color: #2E382E; /* Color de fondo */
+  color: white; /* Color del texto */
 }
 
+/* Cambio de estilo al pasar el mouse sobre los botones de navegación */
 .button button:hover {
-  background: #50C9CE;
-  color: #ffffff;
+  background: #50C9CE; /* Cambia el color de fondo */
+  color: #ffffff; /* Mantén el color del texto */
 }
-
-
