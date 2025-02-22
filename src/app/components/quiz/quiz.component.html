@@ -1,0 +1,32 @@
+<h2 class="container text-centerP mb-3 ">¡¡Bienvenido a nuestro QUIZ!!</h2>
+<div class="quiz-container card shadow">
+  
+  <h2 class="quiz-title">Test de Hábitos Saludables</h2>
+
+  <div *ngFor="let question of questions; let i = index" class="question">
+    <h4>{{ question.question }}</h4>
+
+    <div *ngFor="let option of question.options">
+      <button class="option-btn" [class.selected]="question.selectedOption === option.score"
+        (click)="selectOption(i, option.score)">
+        {{ option.answer }}
+      </button>
+    </div>
+  </div>
+
+  <!-- Botón para ver el resultado después de responder todas las preguntas -->
+  <div *ngIf="!quizCompleted" class="">
+    <div class="submit">
+      <button class="btn btn-warning" [disabled]="!allQuestionsAnswered()" (click)="evaluateResult()">Evaluar
+        Resultados</button>
+    </div>
+  </div>
+
+  <!-- Mostrar el resultado solo después de completar el quiz -->
+  <div *ngIf="quizCompleted" class="result">
+    <h3>Resultado:</h3>
+    <p>{{ result }}</p>
+    <button class="btn btn-primary" (click)="resetQuiz()">Reiniciar Quiz</button> <br><br>
+    <button class="btn btn-success" [routerLink]="(['/hSaludables'])">Descubre Hábitos Saludables</button>
+  </div>
+</div>

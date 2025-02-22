@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SeccionesComponent } from './components/secciones/secciones.component';
@@ -9,6 +8,14 @@ import { HeaderComponent } from './components/header/header.component';
 import { CarruselImagenesComponent } from './components/carrusel-imagenes/carrusel-imagenes.component';
 import { InformacionSaludComponent } from './components/informacion-salud/informacion-salud.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { GraficosComponent } from './components/graficos/graficos.component';
+import { QuizComponent } from './components/quiz/quiz.component';
+import { HabitosInsalubresComponent } from './components/habitos-insalubres/habitos-insalubres.component';
+import { HabitosSaludablesComponent } from './components/habitos-saludables/habitos-saludables.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { EstilosVidaComponent } from './components/estilos-vida/estilos-vida.component';
+import { AboutComponent } from './components/about/about.component';
+
 
 @NgModule({
   declarations: [
@@ -18,7 +25,15 @@ import { FooterComponent } from './components/footer/footer.component';
     HeaderComponent,
     CarruselImagenesComponent,
     InformacionSaludComponent,
-    FooterComponent
+    FooterComponent,
+    GraficosComponent,
+    QuizComponent,
+    HabitosInsalubresComponent,
+    HabitosSaludablesComponent,
+    ContactComponent,
+    EstilosVidaComponent,
+    AboutComponent,
+    
   ],
   imports: [
     BrowserModule,

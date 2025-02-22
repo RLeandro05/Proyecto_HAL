@@ -1,0 +1,72 @@
+
+<br><br><br>
+<!-- Contenedor para las frutas -->
+<div class="fruit-container">
+    <div class="fruit apple"></div>
+    <div class="fruit banana"></div>
+    <div class="fruit orange"></div>
+</div>
+
+
+<h2 class="text-center my-5">Contáctanos</h2>
+<p class="text-center">Estamos aquí para ayudarte. Si tienes cualquier duda, contáctanos sin compromiso.</p>
+
+<form action="#" method="post" class="container my-4 custom-form">
+  <div class="mb-3">
+    <label for="nombre" class="form-label">Nombre Completo:</label>
+    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+  </div>
+  <div class="mb-3">
+    <label for="email" class="form-label">Correo Electrónico:</label>
+    <input type="email" class="form-control" id="email" name="email" placeholder="tucorreo@ejemplo.com" required>
+  </div>
+  <div class="mb-3">
+    <label for="telefono" class="form-label">Teléfono (Opcional):</label>
+    <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Tu número de teléfono">
+  </div>
+  <div class="mb-3">
+    <label for="asunto" class="form-label">Asunto:</label>
+    <select class="form-select" id="asunto" name="asunto" required>
+      <option value="" disabled selected>Selecciona un asunto</option>
+      <option value="consulta">Consulta</option>
+      <option value="soporte">Soporte técnico</option>
+      <option value="colaboracion">Colaboraciones</option>
+      <option value="otros">Otros</option>
+    </select>
+  </div>
+  <div class="mb-3">
+    <label for="mensaje" class="form-label">Mensaje:</label>
+    <textarea class="form-control" id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí" required></textarea>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Preferencia de contacto:</label>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="contacto" id="contactoCorreo" value="correo" checked>
+      <label class="form-check-label" for="contactoCorreo">Correo Electrónico</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="contacto" id="contactoTelefono" value="telefono">
+      <label class="form-check-label" for="contactoTelefono">Teléfono</label>
+    </div>
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="privacidad" required>
+    <label class="form-check-label" for="privacidad">Acepto la <a href="#">política de privacidad</a></label>
+  </div>
+  <button type="submit" class="btn btn-primary w-100">Enviar Mensaje</button>
+</form>
+
+<section class="redesSociales text-center my-5">
+  <h3>Síguenos en nuestras redes sociales</h3>
+  <a href="#" class="me-3">TikTok</a>
+  <a href="#" class="me-3">YouTube</a>
+  <a href="#">Instagram</a>
+</section>
+
+<section class="correoContacto text-center my-5">
+  <h4>Métodos de contacto inmediato</h4>
+  <h5>Correo de contacto:</h5>
+  <p>info&#64;ejemplo.com</p>
+  <h5>Teléfono de contacto:</h5>
+  <p>+34 123456789</p>
+</section>

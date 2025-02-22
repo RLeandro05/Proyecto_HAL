@@ -1,0 +1,117 @@
+.quiz-container {
+    background-color: #4fc9ce;
+    padding: 20px;
+    max-width: 800px;
+    margin: 30px auto;
+  }
+  
+  /* Título del quiz */
+  .quiz-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #343a40;
+    margin-bottom: 20px;
+    
+  }
+  .text-centerP{
+    text-align: center;
+    color:#389caa;
+    border: 2px solid #389caa; /* Se añade un borde al hacer hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombras más pronunciadas para resaltar */
+    border-radius: 10px;
+    margin-top: 10%;
+  }
+  
+  /* Estilo para las preguntas */
+  .question {
+    margin-bottom: 20px;
+  }
+  
+  .question h4 {
+    font-size: 1.25rem;
+    color: #343a40;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  /* Estilos para las opciones de respuesta */
+  .option-btn {
+    display: block;
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 1rem;
+    text-align: left;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .option-btn:hover {
+    background-color: #f1f1f1;
+    transform: scale(1.05);
+    border: 1px solid #ffc507;
+  }
+  
+  .option-btn.selected {
+    background-color: #ffc507;
+    color: #ffffff;
+    border: 1px solid #007bff;
+  }
+  
+  .option-btn.selected:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  /* Estilos para el botón de evaluación */
+  .submit {
+    text-align: center;
+    margin-top: 20px; /* Aseguramos que esté un poco separado de las preguntas */
+  }
+  
+  
+  
+  
+  
+  /* Estilos para mostrar el resultado */
+  .result {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .result h3 {
+    color: #389caa;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .result p {
+    font-size: 1.2rem;
+    color: #343a40;
+  }
+  
+  /* Responsividad */
+  @media (max-width: 768px) {
+    .quiz-container {
+      padding: 15px;
+    }
+  
+    .quiz-title {
+      font-size: 1.5rem;
+    }
+  
+    .option-btn {
+      font-size: 1rem;
+    }
+  
+    .submit-btn button {
+      font-size: 1rem;
+    }
+  }

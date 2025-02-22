@@ -1,1 +1,62 @@
-<p>carrusel-imagenes works!</p>
+<section class="banner">
+  <div class="video-container">
+    <video autoplay loop muted playsinline class="banner-video">
+      <source src="#" type="video/mp4">
+      Tu navegador no soporta el elemento de video.
+    </video>
+  </div>
+</section>
+
+<!-- Fuente para los iconos -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<div class="container">
+  <div class="slide">
+      <div class="item escalada">
+          <div class="content">
+              <div class="name">Deportes | Escalada</div>
+              <div class="des">Mide tus datos mediante estádisticas contestando unas preguntas, analizamos tu rendimiento, mejoramos tu alimentación y diseñamos un plan específico para tí.</div>
+              <a class="btn">Hacer Quiz ahora</a>
+          </div>
+      </div>
+      <div class="item bici">
+          <div class="content">
+              <div class="name">Deportes | Bicicleta</div>
+              <div class="des">Mide tus datos mediante estádisticas contestando unas preguntas, analizamos tu rendimiento, mejoramos tu alimentación y diseñamos un plan específico para tí.</div>
+              <a class="btn">Hacer Quiz ahora</a>
+          </div>
+      </div>
+      <div class="item buceo">
+          <div class="content">
+              <div class="name">Deportes | Buceo</div>
+              <div class="des">Mide tus datos mediante estádisticas contestando unas preguntas, analizamos tu rendimiento, mejoramos tu alimentación y diseñamos un plan específico para tí.</div>
+              <a class="btn">Hacer Quiz ahora</a>
+          </div>
+      </div>
+      <div class="item correr">
+          <div class="content">
+              <div class="name">Deportes | Correr</div>
+              <div class="des">Mide tus datos mediante estádisticas contestando unas preguntas, analizamos tu rendimiento, mejoramos tu alimentación y diseñamos un plan específico para tí.</div>
+              <a class="btn">Hacer Quiz ahora</a>
+          </div>
+      </div>
+      <div class="item crossfit">
+          <div class="content">
+              <div class="name">Deportes | Crossfit</div>
+              <div class="des">Mide tus datos mediante estádisticas contestando unas preguntas, analizamos tu rendimiento, mejoramos tu alimentación y diseñamos un plan específico para tí.</div>
+              <a class="btn">Hacer Quiz ahora</a>
+          </div>
+      </div>
+      <div class="item ninoescalada">
+          <div class="content">
+              <div class="name">Comienza joven, crece fuerte.</div>
+              <div class="des">Fomentamos la importancia de empezar a cuidar tu salud desde temprano, porque cada paso dado hoy construye un futuro más fuerte, saludable y lleno de energía.</div>
+              <a class="btn">Hacer Quiz ahora</a>
+          </div>
+      </div>
+  </div>
+  <div class="button">
+      <button class="prev" (click)="prevSlide()"><i class="fa-solid fa-arrow-left"></i></button>
+      <button class="next" (click)="nextSlide()"><i class="fa-solid fa-arrow-right"></i></button>
+  </div>
+</div>
